@@ -15,7 +15,6 @@ const MessageBox = styled.div`
 
 const AnotherPage = () => (
   <div>
-    <Header />
     <div className="container">
       <MessageBox>This is another page.</MessageBox>
     </div>

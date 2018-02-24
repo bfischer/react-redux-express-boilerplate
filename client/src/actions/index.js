@@ -14,3 +14,16 @@ export function fetchTest() {
     });
   };
 }
+
+export function login() {
+  return (dispatch) => {
+  //  window.href.location = 'http://www.google.com'
+
+    axios.get(`${API_ROOT}/login`).then((response) => {
+      // dispatch({
+      //   type: FETCH_TEST,
+      //   payload: response.data,
+      // });
+    });
+  };
+}

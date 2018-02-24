@@ -12,6 +12,10 @@ app.get('/api/test', (req, res) => {
   });
 });
 
+app.get('/api/login', (req, res) => {
+  res.status(301).redirect('http://www.google.com');
+});
+
 // The "catch all" handler: for any request that doesn't
 // match one above, send back React's index.html file.
 app.get('*', (req, res) => {
